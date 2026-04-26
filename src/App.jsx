@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import logo from '/src/images/logo.png';
+import teamImage from '/src/images/team.png';
 
 const reveal = {
   hidden: { opacity: 0, y: 30 },
@@ -446,7 +447,7 @@ function App() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.65 }}
-            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80"
+            src={teamImage}
             alt="Réunion de travail d'une équipe africaine multidisciplinaire"
             className="h-[450px] w-full rounded-3xl object-cover shadow-soft"
           />
